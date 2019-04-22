@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		{% load staticfiles %}
+		<link rel="SHORTCUT ICON" href="{% static 'img/favicon.ico' %}" />
+		<meta charset="UTF-8">
+		<title>
+			<<<<<welcome>>>>>></title>
+	</head>
+	{% load static %}
+	<link href="{%static 'css/socond.css' %}" rel="stylesheet" type="text/css"/>
+	<body id="content">
+		<div id="tip" >
+			<span id="tip_span" >
+				{{content}}
+			</span>
+		</div>
+		<div id="text">
+			<div id="main_top"> 
+				<div id="main">
+					<div id="choice">
+						<div id="login_">
+							<button id="login_form" class="top_" value="">登录</button>
+						</div>
+						<div id="digist_">
+							<button id="digist_form" class="top_" value="">注册</button>
+						</div>
+					</div>
+					<form action="/logintoPage/" method="POST">
+						{% csrf_token %}
+						<div id="login_1">
+							<div id="line_1">
+								<div id="n1">
+									<span id="j1"> 
+												账&nbsp;号
+											</span>
+								</div>
+								<div id="m1"> 
+									<input id="loginAcc"  type="text" value="" name="account" /><span id="loginAcc_span"></span>
+								</div>
+							</div>
+							<div id="line_2">  
+								<div id="n1"> 
+									<span id="j1">
+												密&nbsp;码
+											</span>
+								</div>
+								<div id="m1">
+									<input id="loginPass"  type="password" value="" name="password" /><span id="loginPass_span"></span>
+								</div>
+							</div>
+							<div id="line_3">
+								<div id="button_login">
+									<button id="button_login_" type="submit">登&nbsp;&nbsp;录</button>
+								</div>
+							</div>
+						</div>
+					</form>
+					<form action="/register/" method="POST" onsubmit="return ckacke_dig()">
+						{% csrf_token %}
+						<div id="digist_1">
+							<div id="line_21">
+								<div id="n1">
+									<span id="j2">
+													账&nbsp;号
+												</span>
+								</div>
+								<div id="m1">
+									<input id="digistAcc" onblur="chack_DACC()" type="text" value="" name="account"/><span id="digistAcc_span"></span>
+								</div>
+							</div>
+							<div id="line_22">
+								<div id="n1">
+									<span id="j2">
+													密&nbsp;码
+												</span>
+								</div>
+								<div id="m1">
+									<input id="digistPas" onblur="chack_DPAS()" type="password" value="" name="pass_word"/><span id="digistPas_span"></span>
+								</div>
+							</div>
+							<div id="line_23">
+								<div id="n1">
+									<span id="j2">
+													确认密码
+												</span>
+								</div>
+								<div id="m1">
+									<input id="digistPass" onblur="chack_DPASS()" type="password" value="" /><span id="digistPass_span"></span>
+								</div>
+							</div>
+							<div id="line_24">
+								<div id="button_digist">
+									<button id="button_digist_">同意条款并登录</button>
+								</div>
+								<div id="chackbox">
+									<input id="check" type="checkbox" checked="checked" style="width: 20px;box-shadow: none;" />
+									<span id="yangjispan">《杨季协议》</span>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="{%static 'js/Jquary.js' %}" type="text/jscript" charset="UTF-8"></script>
+	<script src="{%static 'js/socond.js' %}" type="text/jscript" charset="UTF-8"></script>
+</html> 

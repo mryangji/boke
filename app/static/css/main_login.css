@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px black solid; */
+}
+@font-face {
+    font-family:yunmeng;
+    src: url('/static/font/yewei.ttf');
+}
+
+
+#user_picture{
+    position: relative;
+    display: block;
+    float: left;
+    left: 150px;
+    top: 16px;
+    width: 120px;
+    height: 120px;
+}
+
+#user_mass{
+    position: relative;
+    float: left;
+    top: 20px;
+    left: 200px;
+    width: 300px;
+    height: 100px;
+}
+
+#user_name{
+    /* display: block; */
+    position: relative;
+    width: 150px;
+    height: 30px;
+    top: 20px;
+    left: 25px;
+    font-family: yunmeng;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 30px;
+    color: black;   
+}
+
+#user_span{
+    /* display: block; */
+    position: relative;
+    left: 30px;
+    top: 19px;
+    height: 20px;
+    font-family: yunmeng;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+}
+
+.user_ma{
+    display: block;
+    position: relative;
+    width: 75px;
+    float: left;
+}
+
+#user_Mass{
+    position: relative;
+    width: 350px;
+    height: 30px;
+    top: 25px;
+    left: 25px;
+}
+
+.user_ma a{
+    color: blue;
+    text-decoration: none;
+}
+
+#user_picture>img{
+    width: 100%;
+    height: 100%;
+}
+
+#user_Mass{
+    font-family: yunmeng;
+    font-weight: 500;
+}
+
+#input_content{
+	position: relative;
+    width: 100%;
+    height: 260px;
+}
+#input_title,textarea,#submit_div{
+	position: relative;
+	display: block;
+	margin: auto;
+	box-sizing: border-box;
+	border: 1px black solid;
+	border-radius: 5px;
+}
+#input_title{
+	width: 857px;
+	height: 30px;
+	font-size: 22px;
+	font-family: yunmeng;
+	font-weight: 800;
+}
+
+textarea{
+	width: 857px;
+	height: 150px;
+	margin-top: 10px;
+	resize: none;
+	font-family: yunmeng;
+	font-size: 18px;
+}
+
+#submit_div{
+	width: 90%;
+	margin-top: 30px;
+    border: none;
+    
+}
+#submit_div>input{
+	/* line-height: 40px; */
+	position: relative;
+	display: block;
+	float: left;
+	font-size: 15px;
+}
+
+#submit_div>button{
+	position: relative;
+	display: block;
+	width: 60px;
+	height: 30px;
+	top: -5px;
+	right: 10px;
+	float: right;
+	font-size: 20px;
+	color: white;
+	letter-spacing: 5px;
+	text-align: right;
+	background-color: #1daddf;
+}
+
+.content_title img{
+    position: relative;
+    display: block;
+    float: right;
+    width: 25px;
+    height: 25px;
+    right: 40px;
+    top: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 3px;
+}
+.like_div span{
+    position: relative;
+    display: block;
+    float: right;
+    font-size: 10px;
+    left: -15px;
+    color: #8a19c1;
+    font-weight: 900;
+}
+.like_div a{
+    position: absolute;
+    display: block;
+    font-size: 10px;
+    left: 580px;
+    color: #8a19c1;
+    font-weight: 900;
+}
+
+.displaynone {
+    display: none;
+}
+
+.displayblock{
+    display: block;
+}
+
+
+.attention{
+	position: relative;
+	display: block;
+	margin: auto;
+	top: 10px;
+	width: 70px;
+	height: 25px;
+	border: 1px #02a3e8 solid;
+	background-color: skyblue;
+	font-family: yunmeng;
+	font-size: 20px;
+	text-align: center;
+	line-height: 28px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.attentiond{
+	position: relative;
+	display: block;
+	margin: auto;
+	top: 10px;
+	width: 70px;
+	height: 25px;
+	border: 1px gray solid;
+	background-color: gray;
+	color: white;
+	font-family: yunmeng;
+	font-size: 20px;
+	text-align: center;
+	line-height: 28px;
+	border-radius: 5px;
+}
+
+.tip{
+    position: fixed;
+    font-size: 18px;
+    /* border: 1px black solid; */
+    /* border-radius: 9px; */
+    width: 200px;
+    text-align: center;
+    border-top: 3px green solid;
+    border-bottom: 3px green solid;
+    /* border-left: 7px white solid;
+    border-right: 7px white solid; */
+    top:400px;
+    left: 0px;
+    right: 0;
+    margin: auto;
+    background-color: #8bc34a; 
+}
+
+.lik1{
+    position: absolute;
+    display: none;
+}
+
+.lik2{
+    position: absolute;
+    display: block;
+    background-color: bisque;
+    border: 1px black solid;
+}

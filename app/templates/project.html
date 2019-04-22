@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        border: 1px black solid;
+    }
+
+    #top_div{
+        width: 100%;
+        height: 30px;
+        border: 1px black solid;
+    }
+    #menu_div,#response_div{
+        position: relative;
+        {#display: inline-block;#}
+        border: 1px black solid;
+        float: left;
+    }
+    #menu_div{
+        width: 200px;
+    }
+    #response_div{
+        left: 0px;
+        {#float: right;   #}
+    }
+</style>
+
+<body>
+<div id="top_div">
+
+</div>
+<div id="menu_div">
+
+</div>
+<div id="response_div">
+
+</div>
+</body>
+
+<script>
+    window.onload=function () {
+        alert('asd')
+        document.getElementById('menu_div').style.height = window.innerHeight - 30 +'px'
+        document.getElementById('response_div').style.height = window.innerHeight - 30 +'px'
+        document.getElementById('response_div').style.width = window.innerWidth - 227 +'px'
+    }
+    $('#menu_div').click(function () {
+        alert('qwe')
+        $.ajax({
+            url:'/bbb/?name=111',
+            type:'GET',
+            success:function (res) {
+                document.getElementById('response_div').innerHTML = res
+            }
+        })
+     })
+</script>
+</html>

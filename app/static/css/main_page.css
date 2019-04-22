@@ -1,0 +1,404 @@
+@font-face {
+	font-family: yunmeng; 
+	src: url('/static/font/yewei.ttf');
+}
+
+@font-face {
+	font-family: limin;
+	src: url('/static/font/limin.ttf');
+	font-size: 50px;
+}
+
+@font-face {
+	font-family: boke;
+	src: url('/static/font/boke.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	/* border: 1px black solid; */
+}
+
+#top_div {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	/*background-color: bisque;*/
+	/*opacity: 0.2;*/
+}
+
+#top_ {
+	border: 1px black solid;
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	background-color: white;
+	opacity: 0.2;
+}
+
+#top {
+	position: relative;
+	width: 1150px;
+	height: 100%;
+	margin: auto;
+}
+
+#boke_tubiao {
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	/*background-image: url(img/tubiao.jpg);
+			background-size: 108% 108%;*/
+}
+
+#boketubiao {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-image: url("/static/img/tubiao.jpg");
+	background-size: 100% 100%;
+}
+
+#sousuo {
+	position: relative;
+	width: auto;
+	height: 100%;
+	left: 250px;
+	font-family: yunmeng;
+	font-size: 25px;
+	line-height: 48px;
+	text-align: left;
+	float: left;
+}
+
+#ul_num {
+	position: relative;
+	display: block;
+	width: 500px;
+	height: 100%;
+	float: right;
+	font-family: "微软雅黑";
+	font-size: 25px;
+	text-align: center;
+	line-height: 48px;
+	background-color: transparent;
+}
+
+#head_div {
+	position: relative;
+	width: 100%;
+	height: 200px;
+}
+
+#head {
+	position: relative;
+	height: 100%;
+	width: 1150px;
+	margin: auto;
+}
+
+#title_div {
+	position: relative;
+	height: 50px;
+	width: 100%;
+	background: #f8fcfd;
+	border: 1px #dff2f8 solid;
+}
+
+#ul {
+	position: relative;
+	height: 100%;
+	width: 1140px;
+	margin: auto;
+}
+
+#content_div {
+	position: relative;
+	width: 100%;
+	/*自定义————————————————————————————————————————————————————————————————————*/
+	border: 1px transparent solid;
+	background-color: #e5e5e5;
+	/*padding-top: 2%;*/
+}
+
+#content {
+	position: relative;
+	width: 1150px;
+	height: 96%;
+	/*自定义————————————————————————————————————————————————————————————————————*/
+	/*height: 300px;*/
+	/*     asdasdasasasasasasasasasasasasasasasasasasasasasasasas*/
+	margin: auto;
+	margin-top: 20px;
+}
+
+#menu_div {
+	display: inline-block;
+	width: 220px;
+	height: 500px;
+	top: 0px;
+	background-color: white;
+}
+
+#setting_div{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 20px;
+	width: 900px;
+	left: 240px;
+	/*asdasfasdasfasdsa*/
+	background-color: white;
+}
+
+#user_set{
+	position: relative;
+	width: 100%;
+	/* top: 20px; */
+	/* background-color: #e1e4e6; */
+	margin: 20px auto;
+	/*asdawfaaaaaaa  aaaaaaaaaaaaaaaaaaaaaaasd*/
+}
+
+#boke {
+	position: relative;
+	width: 250px;
+	height: 150px;
+	float: left;
+	top: 20px;
+}
+
+span{
+	word-wrap: break-word;
+}
+
+#span {
+	position: relative;
+	width: 60%;
+	height: 70%;
+	top: 35px;
+	float: right;
+}
+
+#boke>a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: none;
+	text-decoration: none;
+	font-family: boke;
+	font-size: 110px;
+	text-align: center;
+	line-height: 150px;
+}
+
+#title_ul {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+}
+
+.top {
+	display: block;
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+
+.title {
+	display: block;
+	width: 180px;
+	height: 100%;
+	float: left;
+}
+
+#title_ul a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 50px;
+	font-family: yunmeng;
+	font-size: 35px;
+	text-decoration: none;
+}
+
+.m {
+	width: 80%;
+	height: 80%;
+	margin-top: 5%;
+}
+
+#top_mass a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-family: yunmeng;
+	color: black;
+	line-height: 50px;
+}
+
+.content{
+	position: relative;
+	/* border: 1px black solid; */
+	/* border-top: 2px gold solid;
+	border-bottom: 2px gold solid; */
+	/* box-shadow: 0px 0px 5px 2px black; */
+	width: 95%;
+	/* height: 300px; */
+	/* border-radius: 5px; */
+	/* height: 180px; */
+	margin: 1px auto;
+	top: -2px;
+	border-top: 2px #e1e4e6 solid ;
+	border-bottom: 2px #e1e4e6 solid ;
+	background-color: #fff;
+
+}
+
+.content_title{
+	position: relative;
+	/* border-bottom: 1px black solid; */
+	margin:10px 0px 10px;
+	height: 36px;
+}
+
+.content_title>span{
+	position: relative;
+	display: block;
+	float: left;
+	line-height: 36px;
+	text-decoration: none;
+	font-family: yunmeng;
+	color: black;
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.content_content dt{
+	position: relative;
+}
+
+dt img{
+	width: 100px;
+	height: 100px;
+}
+.content_image{
+	position: relative;
+	display: inline;
+}
+.timeANDname{
+	position: relative;
+	margin-top: 100px;
+	height: 30px;
+	width: 600px;
+	float: right;
+	/* border-top: 1px black solid; */
+}
+.time{
+	position: relative;
+	display: block;
+	float: left;
+	height: 100%;
+	line-height: 30px;
+	width: 50%;
+}
+
+.content_name{
+	position: relative;
+	display: block;
+	float: right;
+	height: 100%;
+	width: 30%;
+	text-decoration: none;
+	color: black;
+	right: 0;
+}
+
+.replay_mass{
+	position: relative;
+	display: inline-block;
+    width: 220px;
+	height: 100%;
+	border-right: 2px #e1e4e6 solid;
+}
+
+.repaly_user{
+	position: relative;
+	display: block;
+	text-decoration: none;
+	width: 100px;
+	color: black;
+	margin: 20px auto 10px auto;
+}
+
+.repaly_user>img{
+	width: 100px;
+	height: 100px;
+}
+
+.userNickname{
+	position: relative;
+	display: block;
+	height: 30px;
+	font-family: yunmeng;
+	font-size: 20px;
+	text-align: center;
+	line-height: 35px;
+}
+
+.replay_con{
+	position: relative;
+	width: 600px;
+	display: inline-block;
+	vertical-align: top;
+	border-left: 2px #e1e4e6 solid;
+	left: -7px;
+	padding-left: 10px;
+	/* height: 85%; */
+	/* float: right; */
+}
+
+#page_div{
+	text-align: center;
+	text-decoration: none;
+}
+
+#page_div li{
+	display: inline;
+}
+
+#page_div a{
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	margin: 0px 3px;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	border-radius: 5px;
+}
+
+#page_div a.active{
+	background-color: #e5e5e561;
+	border-radius: 5px;
+}
+
+#page_div a:hover:not(.active){
+	background-color: #ddd;
+}
+ 
+.absu{
+	position: absolute;
+}
+
+.fixed{
+	position: fixed;
+}

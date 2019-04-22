@@ -1,0 +1,173 @@
+* {
+	margin: 0;
+	padding: 0;
+	/* border: 1px black solid; */
+}
+ 
+@font-face {
+	font-family: limin;
+	src: url('/static/font/yewei.ttf');
+}
+body{
+	background-image: url('/static/img/3.png');
+}
+form {
+	width: auto;
+	height: 0;
+}
+
+html {
+	height: 0px;
+}
+
+#body {
+	position: relative;
+	height: 600px;
+	top: 200px;
+	width: 570px;
+	margin: auto;
+	border-radius: 15px;
+	box-shadow: 0px 0px 10px  black;
+	background: rgba(107, 107, 234, 0.8);
+}
+
+#user_picture {
+	position: relative;
+	width: 100%;
+	height: 260px;
+	top: 15px
+}
+
+#user_picture>img {
+	position: relative;
+	display: block;
+	width: 190px;
+	height: 190px;
+	top: 15px;
+	border-radius: 15px;
+	margin: auto;
+	border: 1px black solid;
+}
+
+#file>input {
+	position: relative;
+	display: block;
+	width: 68px;
+	height: 22px;
+	margin: auto;
+	top: 0px;
+	opacity: 0;
+	/*z-index: 1;*/
+}
+
+#file>span {
+	position: relative;
+	display: block;
+	width: 68px;
+	height: 22px;
+	top: 25px;
+	border-radius: 5px;
+	margin: auto;
+	text-align: center;
+	line-height: 22px;
+	background-color: #7a45e5;
+	font-family: limin;
+	font-weight: 200;
+	border: 1px black solid;
+	/*z-index: -1;*/
+}
+
+#user_mass {
+	top: 25px;
+	position: relative;
+	width: 100%;
+	height: 250px;
+}
+
+#ul {
+	position: relative;
+	top: 20px;
+}
+
+#ul li {
+	position: relative;
+	display: block;
+	width: 550px;
+	height: 45px;
+	margin: auto;
+}
+
+li span {
+	display: block;
+	position: relative;
+	width: 30%;
+	height: 100%;
+	text-align: right;
+	line-height: 48px;
+	font-family: limin;
+	font-weight: 600;
+	font-size: 25px;
+	float: left;
+}
+
+li input {
+	display: block;
+	position: relative;
+	top: 10px;
+	height: 60%;
+	width: 60%;
+	text-align: center;
+	border-radius: 7px;
+	font-size: 24px;
+	font-family: limin;
+	font-weight: 600;
+	box-sizing: border-box;
+}
+
+#form_sub {
+	display: block;
+	position: relative;
+	width: 50px;
+	height: 25px;
+	font-family: "微软雅黑";
+	border-radius: 5px;
+	/*width: 30px;*/
+	background-color: #7a45e585;
+	color: white;
+	float: left;
+	border: 1px black solid;
+}
+
+#sub_div {
+	position: relative;
+	width: 30%;
+	margin: auto;
+}
+
+#sub_div a {
+	display: block;
+	position: relative;
+	width: 48px;
+	height: 23px;
+	font-family: "微软雅黑";
+	text-align: center;
+	text-decoration: none;
+	font-size: 15px;
+	line-height: 23px;
+	border-radius: 5px;
+	/*width: 30px;*/
+	background-color: #7a45e585;
+	color: white;
+	float: right;
+	border: 1px black solid;
+}
+#tip{
+	position: relative;
+	display: block;
+	height: 40px;
+	font-size: 25px;
+	font-family: limin;
+	text-align: center;
+	line-height: 40px;
+	color: red;
+}

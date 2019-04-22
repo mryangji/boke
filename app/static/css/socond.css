@@ -1,0 +1,290 @@
+* {
+			margin: 0;
+			padding: 0;
+			/*border: 1px black solid;*/
+		}
+		@font-face {
+			font-family:yunmeng;
+			src: url('/static/font/yewei.ttf');
+		}
+		@font-face {
+			font-family:limin;
+			src: url('/static/font/limin.ttf');
+			font-size: 50px;
+		}
+		@font-face {
+			font-family:boke;
+			src: url('/static/font/boke.ttf');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face{
+			font-family:byx;
+			src: url('/static/font/byx.ttf');
+		}
+		@font-face{
+			font-family:font1;
+			src: url('/static/font/English_font1.ttf');
+		}
+		body {
+			height: 838px;
+			background-image: url('/static/img/timg.jpg');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+		
+		.ball {
+			position: absolute;
+			/*top: 0px;
+			left: 0px;*/
+			width: 140px;
+			height: 140px;
+			border-radius: 50%;
+			/*background-color: green;*/
+			box-shadow: -5px -5px 20px 0px #25a5e2 inset;
+			z-index: -1;
+		}
+		
+		#content {
+			width: 100%;
+			overflow: hidden;
+		}
+		
+		#main {
+			position: relative;
+			width: 500px;
+			height: 400px;
+			margin: auto;
+			/*border: 1px black solid;*/
+		}
+		
+		#text {
+			position: relative;
+			top: 200px;
+			height: auto;
+			width: 100%;
+			/*border: 1px black solid;*/
+		}
+		
+		#n1 {
+			height: 50px;
+			width: 180px;
+		}
+		
+		#j1 {
+			display: block;
+			height: 50px;
+			width: 180px;
+			line-height: 46px;
+			text-align: center;
+			font-size: 40px;
+			font-family: yunmeng;
+			font-weight: 900;
+			text-shadow: 0px 0px 5px black;
+		}
+		
+		#j2 {
+			display: block;
+			height: 50px;
+			width: 180px;
+			line-height: 53px;
+			text-align: center;
+			font-size: 35px;
+			font-family: yunmeng;
+			font-weight: 900;
+			text-shadow: 0px 0px 5px black;
+		}
+		
+		#m1 {
+			height: 50px;
+			width: 320px;
+		}
+		
+		#n1,
+		#m1 {
+			margin-top: 10px;
+			float: left;
+		}
+		
+		input {
+			width: 250px;
+			height: 38px;
+			margin-top: 5px;
+			border: 2px dodgerblue solid;
+			border-radius: 20%;
+			box-shadow: 0px 0px 5px 1px blue;
+			font-family: yunmeng;
+			font-size: 30px;
+			text-align: center;
+		}
+		
+		#main_top {
+			width: 800px;
+			height: 400px;
+			margin: auto;
+			padding-top: 20px;
+			/*border: 3px blue solid;*/
+			border-radius: 25px;
+			background: linear-gradient(skyblue, blue);
+			box-shadow: 5px 5px 15px 3px black;
+			z-index: 3;
+		}
+		
+		#choice {
+			width: 100%;
+			height: 80px;
+			margin-bottom: 15px;
+			padding-top: 20px;
+		}
+		
+		#login_,
+		#digist_ {
+			/*display: block;*/
+			width: 150px;
+			height: 50px;
+			float: left;
+		}
+		
+		.top_ {
+			width: 100%;
+			height: 100%;
+			font-size: 35px;
+			line-height: 100%;
+			font-family: yunmeng;
+			background-color: lightskyblue;
+			text-shadow: 0px 0px 5px black;
+		}
+		
+		#login_1 {
+			/*border: 1px red solid;*/
+			height: 290px;
+			display: block;
+		}
+		
+		#digist_1 {
+			/*border: 1px red solid;*/
+			height: 290px;
+			display: none;
+			margin-top: -10px;
+		}
+		
+		#line_1,
+		#line_2 {
+			/*border: 1px red solid;*/
+			height: 80px;
+		}
+		
+		#line_3 {
+			height: 130px;
+		}
+		
+		#button_login {
+			/*border: 1px red solid;*/
+			height: 100%;
+			width: 200px;
+			margin: auto;
+			padding-top: 15px;
+		}
+		
+		#button_login_ {
+			display: block;
+			width: 150px;
+			height: 60px;
+			margin-top: 5px;
+			margin: auto;
+			background-color: #3855f7;
+			font-family: yunmeng;
+			font-size: 30px;
+			border: 1px dodgerblue solid;
+			border-radius: 15px;
+			text-shadow: 0px 0px 5px black;
+		}
+		
+		#line_21,
+		#line_22,
+		#line_23 {
+			height: 60px;
+			/*border: 1px red solid;*/
+		}
+		
+		#line_24 {
+			height: 140px;
+		}
+		
+		#button_digist,
+		#chackbox {
+			float: left;
+			width: 50%;
+			height: 100%;
+			padding-top: 25px;
+		}
+		
+		#button_digist_ {
+			display: block;
+			width: 150px;
+			height: 40px;
+			/*margin-top: 25px;*/
+			margin: auto;
+			border-radius: 10px;
+			font-size: 20px;
+			/*background: linear-gradient(to left,skyblue, blue, skyblue);*/
+			background-color: #3855f7;
+			/*font-weight: 800;*/
+			font-family: yunmeng;
+			border: 1px dodgerblue solid;
+		}
+		
+		#check {
+			display: block;
+			float: left;
+		}
+		
+		#chackbox>span {
+			display: block;
+			float: left;
+			height: 50px;
+			width: 120px;
+			text-align: center;
+			line-height: 50px;
+			color: white;
+			font-size: 20px;
+		}
+		
+		.right {
+			margin-left: 15px;
+			color: green;
+			font-weight: 900;
+			line-height: 100%;
+			font-size: 35px;
+		}
+		
+		.wrong {
+			margin-left: 15px;
+			color: red;
+			font-weight: 900;
+			line-height: 100%;
+			font-size: 35px;
+		}
+
+		#tip{
+			position: absolute;
+			width: 100%;
+			height: 50px;
+			top: 50px;
+		}
+		#tip_span{
+			display: block;
+			position: relative;
+			width: 1000px;
+			height: 100%;
+			margin: auto;
+			text-align: center;
+			line-height: 50px;
+			font-size: 40px;
+			background-color: transparent;
+			color: red;
+			font-family: yunmeng;
+		}
+		#yangjispan{
+			font-family: yunmeng;
+		}

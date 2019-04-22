@@ -1,0 +1,51 @@
+@font-face {
+	font-family: yunmeng;
+	src: url('/static/font/yewei.ttf');
+}
+
+
+
+#user_set *{
+}
+
+#replay_title{
+    position: relative;
+    width: 95%;
+    margin:  0 auto 100px;
+}
+
+#replay_title>span{
+    display: block;
+    height: 50px;
+    font-family: yunmeng;
+    font-size: 35px;
+    line-height: 50px;
+    font-weight: 900;
+}
+dl dd{
+    font-size: 20px;
+    font-family: yunmeng;
+}
+
+
+#replay_con hr{
+    width: 95%;
+    margin: auto;
+    border: 1px #e1e4e6 solid;
+}
+
+.replay_con_{
+    position: relative;
+	width: 600px;
+	display: inline-block;
+	vertical-align: top;
+	left: -7px;
+	padding-left: 10px;
+}
+.replay_con_ span{
+    font-size: 20px;
+    font-family: yunmeng;
+}
+.re_time{
+    background-color:#e5e5e5;
+}

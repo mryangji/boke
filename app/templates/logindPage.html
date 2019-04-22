@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title><<<<<博客>>>>></title>
+	</head>
+	{% load static %}
+    <link href="{%static 'css/main_page.css'%}" rel="stylesheet" type="text/css"/>
+    <link href="{%static 'css/main_login.css'%}" rel="stylesheet" type="text/css"/>
+	<body id="M">
+		<div id="asd">
+			<span id="asd_span">
+			</span>
+		</div>
+		<div id="top_div">
+			<div id="top_">
+			</div>
+			<div id="top">
+				<a id="boke_tubiao" href="#body">	
+					<div id="boketubiao">					
+					</div>
+				</a>
+				<div id="sousuo" onmousemove="zhanneisousuo()" onmouseout="zhanneisousuo_()">
+						站内搜索
+				</div>
+				<div id="ul_num">
+					<ul id="top_mass">
+						<li class="top">1</li>
+						<li class="top"><a id="login" href="/out/" >退出</a></li>
+						<li class="top">1</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="head_div">
+			<div id="head">
+				<div id="boke">
+					<a href="#body">博客</a>		
+				</div>
+				<div id="span">
+					<a id="user_picture" href="/user_setting/">
+                        <img src="{{USER_picture}}" alt="" >
+                    </a>
+                    <div id="user_mass">
+						<a id="user_name" href="">{{USER_Nickname}}</a><br>
+						<a id="user_span" href="">{{USER_sign}}</a>
+                        <div id="user_Mass">  
+                            <div class="user_ma"><span onmouseout="lik1('lik_div')" onmouseover="lik('lik_div')" >关注 </span><a id="user_like" href="">{{like_num}}</a></div> 
+                            <div class="user_ma"><span onmouseout="lik1('liked_div')" onmouseover="lik('liked_div')">粉丝 </span><a id="user_fans" href="">{{fans}}</a></div> 
+                            <div class="user_ma"><span>微博 </span><a id="user_weibo" href="">{{boke}}</a></div>                         
+                        </div>
+                        
+                    </div>
+                    
+				</div>
+			</div>
+		</div>
+		<div id="title_div">
+			<div id="ul">
+				<ul id="title_ul">
+					<li class="title" style="width: 90px;"><a href="/logindPage/">主页</a></li>
+					<li class="title"><a href="/myboke/">我的博客</a></li>
+					<li class="title"><a href="">个人信息</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="content_div">
+			<div id="content">
+				<div id="menu_div" class="absu">
+					<div id="" >
+
+					</div>
+					<div id="" >
+						
+					</div>
+				</div>
+				<div id="setting_div">
+					<div id="input_content">
+						<form action="/Upload/" method="POST" onsubmit="return Check_upload()" >
+							{% csrf_token %}
+							<input id="input_title" type="text" name="U_title">
+							<textarea name="U_content" id="U_content" cols="30" rows="10"></textarea>
+							<div id="submit_div">
+								<input type="file" id="U_picture" name="U_picture">
+								<button type="submit">发布</button>
+							</div>
+						</form>
+					</div>
+					<div id="user_set">
+						{% for post in posts %}
+							<div class="content">
+								<div class="replay_mass">
+									<a class="repaly_user" href="/permass/{{post.userID}}/" >
+										<img src="{{post.userPicture}}" alt="" >
+									</a>
+										<span class="userNickname">{{post.userNickname}}</span>
+									{% if post.attentiond == none %}
+									<span id="attention{{post.num}}" onclick="attentions('{{post.userID}}', '{{post.num}}')" class="attention" >
+										关注踏
+									</span class="attentiond">
+									{% else %}
+									<span id="attentiond{{post.num}}" onclick="attentions('{{post.userID}}', '{{post.num}}')" class="attentiond" >
+										以关注
+									</span>
+									{% endif %}
+								</div>
+								<div class="replay_con">
+									<div class="content_title" >
+										<span>{{post.title}}</span>
+										<div id="like_div{{post.num}}" class="like_div">
+											{% if post.is_like == 1 %}
+											<a>已赞</a>
+											{% if post.dislike != none %}
+											<img src="/static/img/disliked.jpg"><span>{{post.dislike}}</span>
+											{% endif %}
+											{% if post.lik != none %}
+											<img src="/static/img/liked.jpg"><span>{{post.lik}}</span>
+											{% endif %}
+											{% elif post.is_like == 0  %}
+											<a>已踩</a>
+											{% if post.dislike != none %}
+											<img src="/static/img/disliked.jpg"><span>{{post.dislike}}</span>
+											{% endif %}
+											{% if post.lik != none %}
+											<img src="/static/img/liked.jpg"><span>{{post.lik}}</span>
+											{% endif %}
+											{% else %}
+											<img id="dislike{{post.num}}" onclick="dislike('{{post.num}}')" src="/static/img/dislike.jpg" alt="">
+											<img id="like{{post.num}}" onclick="like('{{post.num}}')" src="/static/img/like.jpg" alt="">
+											{% endif %}
+										</div>
+										<div id="liked{{post.num}}" class="displaynone">
+											<a>已赞</a>
+											{% if post.dislike != none %}
+											<img src="/static/img/disliked.jpg"><span>{{post.dislike}}</span>
+											{% endif %}
+											{% if post.lik != none %}
+											<img src="/static/img/liked.jpg"><span>{{post.lik | add:'1'}}</span>
+											{% else %}
+											<img src="/static/img/liked.jpg"><span>1</span>
+											{% endif %}
+										</div>
+										<div id="disliked{{post.num}}" class="displaynone">
+											<a>已踩</a>
+											{% if post.dislike != none %}
+											<img src="/static/img/disliked.jpg"><span>{{post.dislike | add:'1'}}</span>
+											{% else %}
+											<img src="/static/img/disliked.jpg"><span>1</span>
+											{% endif %}
+											{% if post.lik != none %}
+											<img src="/static/img/liked.jpg"><span>{{post.lik}}</span>
+											{% endif %}
+										</div>
+									</div>
+									<div class="content_content">
+										<dl>
+											<dt class="content_image">
+												<img src="{{post.Picture}}" alt="">
+											</dt>
+											<dd>
+												<span>{{post.content}}</span>
+											</dd>
+										</dl>	
+									</div>
+									<div class="timeANDname">
+										<span class="time">{{post.datetime | date:'Y-m-d H:i:s'}} </span>
+										<a href="/replay/{{post.num}}" class="content_name">回复</a>
+									</div>
+								</div>
+							</div>
+						{% endfor %}
+						<br><br><br>
+						<ul id="page_div">
+							{% if nowPage != 1  %} 
+							<li><a href="/logindPage/1">首</a></li>
+							<li><a href="/logindPage/{{nowPage | add:'-1' }}">上</a></li>
+							{% endif %}
+							{% for i in page_sum %}
+							<li><a id="page_{{i}}"  href="/logindPage/{{i}}">{{i}}</a></li>
+							{% endfor %}	
+							{% if nowPage != total_page  %} 
+							<li><a href="/logindPage/{{nowPage | add:'1' }}" >下</a></li>
+							<li><a href="/logindPage/{{total_page}}">末</a> </li>	 
+							{% endif %}	
+							<input id="page_in" value="{{nowPage}}" style="display:none">
+						</ul>
+					</div>
+				</div>
+				
+			</div>		
+		</div>
+		<div id="lik_div" class="lik1">
+			{% for i in lik %}
+			<span>{{i.userNickname}}</span>
+			{% endfor %}
+		</div>
+		<div id="liked_div" class="lik1">
+			{% for i in liked %}
+			<span>{{i.userNickname}}</span>
+			{% endfor %}
+		</div>
+<!-- 		
+		<div class="tip">
+			 已关注	
+		</div> -->
+	</body>
+	<script src="{%static 'js/Jquary.js'%}" type="text/jscript" charset="UTF-8"></script>
+    <script src="{%static 'js/main_page.js'%}" type="text/jscript" charset="UTF-8"></script>
+    <script src="{%static 'js/main_login.js'%}" type="text/jscript" charset="UTF-8"></script>
+</html>
